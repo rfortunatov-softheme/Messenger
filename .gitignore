@@ -289,3 +289,5 @@ docs/AppRecoveryAPISamples/Dependencies/*
 
 *.VC.opendb
 *.VC.db
+
+packages/*
