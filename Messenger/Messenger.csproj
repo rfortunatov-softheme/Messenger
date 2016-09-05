@@ -144,21 +144,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="..\Icons\arrow_close_minimize-512.png">
-      <Link>Icons\arrow_close_minimize-512.png</Link>
-    </Resource>
-    <Resource Include="..\Icons\close15-128.png">
-      <Link>Icons\close15-128.png</Link>
-    </Resource>
-    <Resource Include="..\Icons\full-screen-icon-png-5.png">
-      <Link>Icons\full-screen-icon-png-5.png</Link>
-    </Resource>
-    <Resource Include="..\Icons\messenger.ico">
-      <Link>Icons\messenger.ico</Link>
-    </Resource>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Resource Include="Icons\close.png" />
+    <Resource Include="Icons\maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\messenger.ico" />
+    <Resource Include="Icons\minimize.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\cef.redist.x64.3.2704.1432\build\cef.redist.x64.targets" Condition="Exists('..\packages\cef.redist.x64.3.2704.1432\build\cef.redist.x64.targets')" />

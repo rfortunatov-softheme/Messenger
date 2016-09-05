@@ -8,7 +8,37 @@
         BorderThickness="0"
         Background="Transparent"
         AllowsTransparency="True">
-    <Border Name="OuterBorder" CornerRadius="6" BorderThickness="15" BorderBrush="White" Background="White">
-        <wpfBrowser:ChromiumWebBrowser Name="Browser" />
-    </Border>
+    <Grid Margin="0,40,0,0">
+    <Border Background="White" CornerRadius="10" BorderBrush="DodgerBlue" BorderThickness="5" PreviewMouseLeftButtonDown="WindowResize" Cursor="SizeNWSE"/>
+        <Grid Background="Transparent" ZIndex="10" Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <DockPanel Panel.ZIndex="5" Grid.Row="0" Grid.Column="0" Background="DodgerBlue" MouseDown="WindowDrag">
+                <Button Name="Close" Background="Transparent" Margin="0,0,15,0" DockPanel.Dock="Right" HorizontalAlignment="Right" Click="Close_OnClick" BorderBrush="Transparent">
+                    <Button.Content>
+                        <Image Source="Icons/close.png" Height="20" Width="20" Stretch="Fill"/>
+                    </Button.Content>
+                </Button>
+                <Button Name="Minimize" Background="Transparent" Margin="0,0,15,0" DockPanel.Dock="Right" HorizontalAlignment="Right" Click="Minimize_OnClick" BorderBrush="Transparent">
+                    <Button.Content>
+                        <Image Source="Icons/minimize.png" Height="20" Width="20" Stretch="Fill"/>
+                    </Button.Content>
+                </Button>
+                <Button Name="Maximize" Background="Transparent" Margin="0,0,15,0" DockPanel.Dock="Right" HorizontalAlignment="Right" Click="Maximize_OnClick" BorderBrush="Transparent">
+                    <Button.Content>
+                        <Image Source="Icons/maximize.png" Height="20" Width="20" Stretch="Fill"/>
+                    </Button.Content>
+                </Button>
+                <TextBlock Text="Messenger" Margin="20,0,0,0" TextAlignment="Left" VerticalAlignment="Center" FontStyle="Normal" FontWeight="Bold" FontSize="14" FontFamily="Arial"/>
+            </DockPanel>
+            <Border CornerRadius="0,0,6,6" BorderThickness="0" BorderBrush="DodgerBlue" Background="White" Grid.Row="1" Grid.Column="0">
+                <wpfBrowser:ChromiumWebBrowser Name="Browser" />
+            </Border>
+        </Grid>
+    </Grid>
 </Window>
