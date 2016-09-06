@@ -5,21 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         Title="Notification"
-        Height="60" 
+        Height="60"
         Width="240"
         AllowsTransparency="true"
         WindowStartupLocation="Manual"
         Background="Transparent"
         Topmost="True"
         WindowStyle="None">
-    <Border Background="WhiteSmoke" CornerRadius="6" BorderThickness="1" BorderBrush="DodgerBlue" MouseDown="CloseWindow">
+    <Border Background="WhiteSmoke" CornerRadius="6" BorderThickness="1" BorderBrush="DodgerBlue"
+            MouseDown="CloseWindow">
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Image Source="Icons/messenger.ico" Margin="5"/>
-            <TextBlock Text="You've got new messages." TextAlignment="Center" VerticalAlignment="Center" Background="WhiteSmoke" Grid.Column="1" />
+            <Image Source="Icons/messenger.ico" Margin="5" />
+            <TextBlock Text="You've got new messages." TextAlignment="Center" VerticalAlignment="Center"
+                       Background="WhiteSmoke" Grid.Column="1" />
         </Grid>
     </Border>
 </Window>
