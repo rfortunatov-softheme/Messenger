@@ -1,5 +1,9 @@
 ﻿using System;
+using System.IO;
+using System.Linq;
 using System.Runtime.InteropServices;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Interop;
@@ -17,9 +21,17 @@ namespace Messenger
         {
             var settings = new CefSettings();
             settings.CefCommandLineArgs.Add("disable-gpu", "1");
+            settings.CachePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "MessengerApp");
+            settings.PersistSessionCookies = true;
+            if (!Directory.Exists(settings.CachePath))
+            {
+                Directory.CreateDirectory(settings.CachePath);
+            }
+
             Cef.Initialize(settings);
             InitializeComponent();
             Browser.Address = "https://messenger.com";
+            Browser.RequestHandler = new RequestHandler(ShowToast);
         }
 
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
@@ -45,6 +57,7 @@ namespace Messenger
         private void Close_OnClick(object sender, RoutedEventArgs e)
         {
             Close();
+            Application.Current.Shutdown(0);
         }
 
         private void Minimize_OnClick(object sender, RoutedEventArgs e)
@@ -55,6 +68,17 @@ namespace Messenger
         private void Maximize_OnClick(object sender, RoutedEventArgs e)
         {
             WindowState = WindowState == WindowState.Maximized ? WindowState.Normal : WindowState.Maximized;
+        }
+
+        private void ShowToast()
+        {
+            Task.Factory.StartNew(() =>
+            {
+                Notification notification = null;
+                Dispatcher.Invoke(() => (notification = new Notification()).Show());
+                Thread.Sleep(TimeSpan.FromSeconds(5));
+                Dispatcher.Invoke(() => notification.CloseWindow(null, null));
+            });
         }
     }
 }

@@ -15,7 +15,7 @@ namespace Messenger
     {
         public App()
         {
-            ShutdownMode = ShutdownMode.OnLastWindowClose;
+            ShutdownMode = ShutdownMode.OnExplicitShutdown;
         }
     }
 }

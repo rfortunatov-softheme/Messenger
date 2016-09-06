@@ -36,8 +36,8 @@
                 </Button>
                 <TextBlock Text="Messenger" Margin="20,0,0,0" TextAlignment="Left" VerticalAlignment="Center" FontStyle="Normal" FontWeight="Bold" FontSize="14" FontFamily="Arial"/>
             </DockPanel>
-            <Border CornerRadius="0,0,6,6" BorderThickness="0" BorderBrush="DodgerBlue" Background="White" Grid.Row="1" Grid.Column="0">
-                <wpfBrowser:ChromiumWebBrowser Name="Browser" />
+            <Border CornerRadius="6" BorderThickness="0" BorderBrush="DodgerBlue" Background="White" Grid.Row="1" Grid.Column="0" Panel.ZIndex="3">
+                <wpfBrowser:ChromiumWebBrowser Name="Browser" Panel.ZIndex="2"/>
             </Border>
         </Grid>
     </Grid>
