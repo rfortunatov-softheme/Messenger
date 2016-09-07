@@ -157,8 +157,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Behaviours\Resize.cs" />
-    <Compile Include="Behaviours\ResizingAdorner.cs" />
     <Compile Include="Controls\BorderButton.xaml.cs">
       <DependentUpon>BorderButton.xaml</DependentUpon>
     </Compile>
