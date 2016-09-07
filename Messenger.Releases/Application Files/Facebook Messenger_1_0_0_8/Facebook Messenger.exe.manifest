@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Facebook Messenger.exe" version="1.0.0.7" publicKeyToken="70becee5be74ea9c" language="en" processorArchitecture="amd64" type="win32" />
+  <asmv1:assemblyIdentity name="Facebook Messenger.exe" version="1.0.0.8" publicKeyToken="0000000000000000" language="en" processorArchitecture="amd64" type="win32" />
   <description asmv2:iconFile="Icons\messenger.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Facebook Messenger" version="1.0.0.0" publicKeyToken="70BECEE5BE74EA9C" language="neutral" processorArchitecture="amd64" />
+    <assemblyIdentity name="Facebook Messenger" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
     <commandLine file="Facebook Messenger.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -79,14 +79,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Facebook Messenger.exe" size="62592">
-      <assemblyIdentity name="Facebook Messenger" version="1.0.0.0" publicKeyToken="70BECEE5BE74EA9C" language="neutral" processorArchitecture="amd64" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Facebook Messenger.exe" size="58880">
+      <assemblyIdentity name="Facebook Messenger" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>WCpJ6Xb/3JEuX+yAWULWgrhviP/AxfaeJDorVAtwRRw=</dsig:DigestValue>
+        <dsig:DigestValue>QRwZd9bu+V0ceKADbOXALf1DTepaDGBnoMBuaEcYWmY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -293,65 +293,4 @@
       <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
     </application>
   </compatibility>
-<publisherIdentity name="CN=RF-WORKSTATION\Roman" issuerKeyHash="62e76b71dbe36dbd43b2d6d66c347c284949c208" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>2j7cg+Yr5aU1MY68QshAl2hta/zH1pz9SFK2Cj6Dl70=</DigestValue></Reference></SignedInfo><SignatureValue>C/IYUqwdByQXuNb8THB5SP1zF8DTwD6BRdONI/RwvFLeec9Ey2ctlIxcCh4/m0hLxQ9o+fNzheodWLlEUi+on84EGGruGcd+eDR/tcoFcm6jNYW7mVbOaNXK9+aFUHjRZiFl0+R7gYTEmHp9nqIeoIFsB3ir1se7Zsko2VGyMgE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>y5vq3iSpFyIPspR2EABPyU69zDAXkai+3s10Q9E0GrObibGSlP0qLoBrzjbIYigtOSjlkqXtlQ/RCRSzhTWRJ8XixYkAFI0lP9X7zDGhILIpJZW5Y1XqmPzBCLK3WGXnDXVjVLyVu1bbknBH6bV5R2P0GIJvIeeUQBGuH5HP8Qk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="bd97833e0ab65248fd9cd6c7fc6b6d689740c842bc8e3135a5e52be683dc3eda" Description="" Url=""><as:assemblyIdentity name="Facebook Messenger.exe" version="1.0.0.7" publicKeyToken="70becee5be74ea9c" language="en" processorArchitecture="amd64" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=RF-WORKSTATION\Roman</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>DijNZGukSQN/QUp4AYYGC6WHcJoPYsm37614C4U+vfA=</DigestValue></Reference></SignedInfo><SignatureValue>otyaH+MQPO0YKy5u2Ok5/gmp64rOQVnFhrBkRn1sHj4hOCY/X7qpzOtPpS4X6B8Qf5G76Cxe/uNYXvLFu+tlf+Q8KpFiXotMIKNCrsscU2gdhDaAOqV7UAai4OT3RmGyxMmxWIs804XSo8pcr+BcVfs5KgAoRq2ZV2+9JU1K07c=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>y5vq3iSpFyIPspR2EABPyU69zDAXkai+3s10Q9E0GrObibGSlP0qLoBrzjbIYigtOSjlkqXtlQ/RCRSzhTWRJ8XixYkAFI0lP9X7zDGhILIpJZW5Y1XqmPzBCLK3WGXnDXVjVLyVu1bbknBH6bV5R2P0GIJvIeeUQBGuH5HP8Qk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQcCiCxNmoXqdHZuk9uA0LFjANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigAUgBGAC0AVwBPAFIASwBTAFQAQQBUAEkATwBOAFwAUgBvAG0AYQBuMB4XDTE2MDgzMTE2NTkyNVoXDTE3MDgzMTIyNTkyNVowMzExMC8GA1UEAx4oAFIARgAtAFcATwBSAEsAUwBUAEEAVABJAE8ATgBcAFIAbwBtAGEAbjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAy5vq3iSpFyIPspR2EABPyU69zDAXkai+3s10Q9E0GrObibGSlP0qLoBrzjbIYigtOSjlkqXtlQ/RCRSzhTWRJ8XixYkAFI0lP9X7zDGhILIpJZW5Y1XqmPzBCLK3WGXnDXVjVLyVu1bbknBH6bV5R2P0GIJvIeeUQBGuH5HP8QkCAwEAATANBgkqhkiG9w0BAQsFAAOBgQDHer6RS9YOsBGzhj5zCBgRLr2taOLC/CZVjdavs23WoLr8d4kRRblrMa66Yq3p1sRn55SEfPDujJRmvv837MLLUHwJO71pm3203uf5Qz+bVI5t3VAlwuTk3GJDkAtGXyeN4wUa3HDcrP/aXl3PZPyUIcIMZMFXUQSOPbRx+FhO6A==</X509Certificate></X509Data></KeyInfo><Object><as:Timestamp>MIILUAYJKoZIhvcNAQcCoIILQTCCCz0CAQExCzAJBgUrDgMCGgUAMIGRBgkqhkiG
-9w0BBwGggYMEgYCi3Jof4xA87RgrLm7Y6Tn+Canris5BWcWGsGRGfWwePiE4Jj9f
-uqnM60+lLhfoHxB/kbvoLF7+41he8sW762V/5DwqkWJei0wgo0KuyxxTaB2ENoA6
-pXtQBqLg5PdGYbLEybFYizzThdKjylyv4FxV+zkqAChGrZlXb70lTUrTt6CCCJkw
-ggPuMIIDV6ADAgECAhB+k+v7fMZOWepLmnfUBvw7MA0GCSqGSIb3DQEBBQUAMIGL
-MQswCQYDVQQGEwJaQTEVMBMGA1UECBMMV2VzdGVybiBDYXBlMRQwEgYDVQQHEwtE
-dXJiYW52aWxsZTEPMA0GA1UEChMGVGhhd3RlMR0wGwYDVQQLExRUaGF3dGUgQ2Vy
-dGlmaWNhdGlvbjEfMB0GA1UEAxMWVGhhd3RlIFRpbWVzdGFtcGluZyBDQTAeFw0x
-MjEyMjEwMDAwMDBaFw0yMDEyMzAyMzU5NTlaMF4xCzAJBgNVBAYTAlVTMR0wGwYD
-VQQKExRTeW1hbnRlYyBDb3Jwb3JhdGlvbjEwMC4GA1UEAxMnU3ltYW50ZWMgVGlt
-ZSBTdGFtcGluZyBTZXJ2aWNlcyBDQSAtIEcyMIIBIjANBgkqhkiG9w0BAQEFAAOC
-AQ8AMIIBCgKCAQEAsayzSVRLlxwSCtgleZEiVypv3LgmxENza8K/LlBa+xTCdo5D
-ASVDtKHiRfTot3vDdMwi17SUAAL3Te2/tLdEJGvNX0U70UTOQxJzF4KLabQry5ke
-rHIbJk1xH7Ex3ftRYQJTpqr1SSwFeEWlL4nO55nn/oziVz89xpLcSvh7M+R5Cvvw
-dYhBnP/FA1GZqtdsn5Nph2Upg4XCYBTEyMk7FNrAgfAfDXTekiKryvf7dHwn5vdK
-G3+nw54trorqpuaqJxZ9YfeYcRG84lChS+Vd+uUOpyyfqmUg09iW6Mh8pU5IRP8Z
-4kQHkgvXaISAXWp4ZEXNYEZ+VMETfMV58cnBcQIDAQABo4H6MIH3MB0GA1UdDgQW
-BBRfmvVuXMzMdJrU3X3vP9vsTIAu3TAyBggrBgEFBQcBAQQmMCQwIgYIKwYBBQUH
-MAGGFmh0dHA6Ly9vY3NwLnRoYXd0ZS5jb20wEgYDVR0TAQH/BAgwBgEB/wIBADA/
-BgNVHR8EODA2MDSgMqAwhi5odHRwOi8vY3JsLnRoYXd0ZS5jb20vVGhhd3RlVGlt
-ZXN0YW1waW5nQ0EuY3JsMBMGA1UdJQQMMAoGCCsGAQUFBwMIMA4GA1UdDwEB/wQE
-AwIBBjAoBgNVHREEITAfpB0wGzEZMBcGA1UEAxMQVGltZVN0YW1wLTIwNDgtMTAN
-BgkqhkiG9w0BAQUFAAOBgQADCZuPee9/WTCq72i1+uMJHbtPggZdN1+mUp8Wjeoc
-kglEbvVt61h8MOj5aY0jcwsSb0eprjkR+Cqxm7Aaw47rWZYArc4MTbLQMaYIXCp6
-/OJ6HVdMqGUY6XlAYiWWbsfHN2qDIQiOQerd2Vc/HXdJhyoWBl6mOGoiEqNRGYN+
-tjCCBKMwggOLoAMCAQICEA7P9DjI/r81bgTYapgbGlAwDQYJKoZIhvcNAQEFBQAw
-XjELMAkGA1UEBhMCVVMxHTAbBgNVBAoTFFN5bWFudGVjIENvcnBvcmF0aW9uMTAw
-LgYDVQQDEydTeW1hbnRlYyBUaW1lIFN0YW1waW5nIFNlcnZpY2VzIENBIC0gRzIw
-HhcNMTIxMDE4MDAwMDAwWhcNMjAxMjI5MjM1OTU5WjBiMQswCQYDVQQGEwJVUzEd
-MBsGA1UEChMUU3ltYW50ZWMgQ29ycG9yYXRpb24xNDAyBgNVBAMTK1N5bWFudGVj
-IFRpbWUgU3RhbXBpbmcgU2VydmljZXMgU2lnbmVyIC0gRzQwggEiMA0GCSqGSIb3
-DQEBAQUAA4IBDwAwggEKAoIBAQCiYws5RLi7I6dESbsO/6HwYQpTk7CY260sD0rF
-bv+GPFNVDxXOBD8r/amWltm+YXkLW8lMhnbl4ENLIpXuwitDwZ/YaLSOQE/uhTi5
-EcUj8mRY8BUyb05Xoa6IpALXKh7NS+HdY9UXiTJbsF6ZWqidKFAOF+6W22E7RVEd
-zxJWC5JH/Kuu9mY9R6xwcueS51/NELnEg2SUGb0lgOHo0iKl0LoCeqF3k1tlw+4X
-dLxBhircCEyMkoyRLZ53RB9o1qh0d9sOWzKLVoszvdljyEmdOsXF6jML0vGjG/SL
-vtmzV4s73gSneiKyJK4ux3DFvk6DJgj7C72pT5kI4RAocqrNAgMBAAGjggFXMIIB
-UzAMBgNVHRMBAf8EAjAAMBYGA1UdJQEB/wQMMAoGCCsGAQUFBwMIMA4GA1UdDwEB
-/wQEAwIHgDBzBggrBgEFBQcBAQRnMGUwKgYIKwYBBQUHMAGGHmh0dHA6Ly90cy1v
-Y3NwLndzLnN5bWFudGVjLmNvbTA3BggrBgEFBQcwAoYraHR0cDovL3RzLWFpYS53
-cy5zeW1hbnRlYy5jb20vdHNzLWNhLWcyLmNlcjA8BgNVHR8ENTAzMDGgL6Athito
-dHRwOi8vdHMtY3JsLndzLnN5bWFudGVjLmNvbS90c3MtY2EtZzIuY3JsMCgGA1Ud
-EQQhMB+kHTAbMRkwFwYDVQQDExBUaW1lU3RhbXAtMjA0OC0yMB0GA1UdDgQWBBRG
-xmmjDkoUHtVM2lJjFz9eNrwN5jAfBgNVHSMEGDAWgBRfmvVuXMzMdJrU3X3vP9vs
-TIAu3TANBgkqhkiG9w0BAQUFAAOCAQEAeDu0kSoATPCPYjA3eKOEJwdvGLLeJdyg
-1JQDqoZOJZ+aQAMc3c7jecshaAbatjK0bb/0LCZjM+RJZG0N5sNnDvcFpDVsfIkW
-xumy37Lp3SDGcQ/NlXTctlzevTcfQ3jmeLXNKAQgo6rxS8SIKZEOgNER/N1cdm5P
-Xg5FRkFuDbDqOJqxOtoJcRD8HHm0gHusafT9nLYMFivxf1sJPZtb4hbKE4FtAC44
-DagpjyzhsvRaqQGvFZwsL0kb2yK7w/54lFHDhrGCiF3wPbRRoXkzKy57udwgCRNx
-62oZW8/opTBXLIlJP7nPf8m/PiJoY1OavWl0rMUdPH+S4MO8HNgEdTGCAfgwggH0
-AgEBMHIwXjELMAkGA1UEBhMCVVMxHTAbBgNVBAoTFFN5bWFudGVjIENvcnBvcmF0
-aW9uMTAwLgYDVQQDEydTeW1hbnRlYyBUaW1lIFN0YW1waW5nIFNlcnZpY2VzIENB
-IC0gRzICEA7P9DjI/r81bgTYapgbGlAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJ
-AzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTE2MDkwNzEwMDAwNlowIwYJ
-KoZIhvcNAQkEMRYEFKnKF2bkD8GKeLVS7UN8PiBofE1OMA0GCSqGSIb3DQEBAQUA
-BIIBABuUlQ7gm8RHSm+Xwt+clMfsk0QgJgYhOGiWIvmKh6YODAsYSWzVW3I+8/Qz
-/Pe1JwvheXGmzc4EBLsZ9zc+sY6u/GSTa4sQ1uPzQqqZU+TmrnRrM5MEP3AjhbxB
-pKNeCSxOCiiVh2+lXn6j9BW9ryglHs7MqXJpHdQny6uOKLpRdvVxdhUPVPbGv+fz
-E9by0ovIG8yYXD46LcDNudird7Ng41k0oyypMeRP6ZrQpP6kW8gpvMmmDFaiI/cX
-CbNE2J+DmvV7moCMtHqV6Uxz9cE3X3W4fbqh4NKVSi7R3qtxrGl0xavE1+fExJSO
-mMB/DP/eHHlBLbqhTk0JxXCqLGA=
-</as:Timestamp></Object></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+</asmv1:assembly>
