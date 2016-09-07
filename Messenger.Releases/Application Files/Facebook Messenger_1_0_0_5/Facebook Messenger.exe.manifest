@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Facebook Messenger.exe" version="1.0.0.3" publicKeyToken="70becee5be74ea9c" language="en" processorArchitecture="amd64" type="win32" />
+  <asmv1:assemblyIdentity name="Facebook Messenger.exe" version="1.0.0.5" publicKeyToken="70becee5be74ea9c" language="en" processorArchitecture="amd64" type="win32" />
   <description asmv2:iconFile="Icons\messenger.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Facebook Messenger" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+    <assemblyIdentity name="Facebook Messenger" version="1.0.0.0" publicKeyToken="70BECEE5BE74EA9C" language="neutral" processorArchitecture="amd64" />
     <commandLine file="Facebook Messenger.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -55,6 +55,30 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CefSharp.BrowserSubprocess.exe" size="8192">
+      <assemblyIdentity name="CefSharp.BrowserSubprocess" version="51.0.0.0" publicKeyToken="40C4B6FC221F4138" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>eX1Gieb9PdNauUXNGn7CFCCN5g1TsVCEesoKPoPyfoo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CefSharp.BrowserSubprocess.Core.dll" size="1065984">
+      <assemblyIdentity name="CefSharp.BrowserSubprocess.Core" version="51.0.0.0" publicKeyToken="40C4B6FC221F4138" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>BqQNmG832BNoCbxSnJBcwW5OF0smqqGX5i8RIZEeh5o=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CefSharp.Core.dll" size="1578496">
       <assemblyIdentity name="CefSharp.Core" version="51.0.0.0" publicKeyToken="40C4B6FC221F4138" language="neutral" processorArchitecture="amd64" />
       <hash>
@@ -80,13 +104,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Facebook Messenger.exe" size="62592">
-      <assemblyIdentity name="Facebook Messenger" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+      <assemblyIdentity name="Facebook Messenger" version="1.0.0.0" publicKeyToken="70BECEE5BE74EA9C" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ZR5QdUdZ6b9Aaxtzy5A/E3PxA4kSx8zOyNQW5P7YCuA=</dsig:DigestValue>
+        <dsig:DigestValue>IOruUyXdvSKPYfSY9MgxdW4Olw6bJYg9bJVk9oDoTMw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -275,10 +299,10 @@
       <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
     </application>
   </compatibility>
-<publisherIdentity name="CN=RF-WORKSTATION\Roman" issuerKeyHash="62e76b71dbe36dbd43b2d6d66c347c284949c208" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Q8wv1W+o9j8A+dvTq68YYXldQKGjNpXeNsrNnUmmI0k=</DigestValue></Reference></SignedInfo><SignatureValue>AdPEEe8BvD57pkIjqTp2WWo94MGfICL/GPSO6GNoDAF2rqq9+jw+5utx8nVDmFS1VrfQkAn4R04g8V8RCmYlZNUn+GxRYf3JOY+DOOmtQRUZE6QkWJUQoOruIm5sBpw4WkpL6tYMyHapKeDW+wlnS/RDy7l1fGrJnMIEQihj+XA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>y5vq3iSpFyIPspR2EABPyU69zDAXkai+3s10Q9E0GrObibGSlP0qLoBrzjbIYigtOSjlkqXtlQ/RCRSzhTWRJ8XixYkAFI0lP9X7zDGhILIpJZW5Y1XqmPzBCLK3WGXnDXVjVLyVu1bbknBH6bV5R2P0GIJvIeeUQBGuH5HP8Qk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="4923a6499dcdca36de9536a3a1405d796118afabd3dbf9003ff6a86fd52fcc43" Description="" Url=""><as:assemblyIdentity name="Facebook Messenger.exe" version="1.0.0.3" publicKeyToken="70becee5be74ea9c" language="en" processorArchitecture="amd64" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=RF-WORKSTATION\Roman</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>j98k43KjYUqpeGEyrqzQSN4MGghlzEyUzd5XekGsLnk=</DigestValue></Reference></SignedInfo><SignatureValue>VEkw1nhHLJNY645XZY77FnDupu0DgFx0ebeCIouw4sSlBBKgI8fx3A77pyIiEIjCRC1kJED7fEOVRj4E0QifSP0KpxfZ5WsERX3Qofg1AgjGyKom9GT5W0RYVEjY9XUQDf2gx7gZrg9m1LoZ48TKmqiXFG24yL0EqUT+ECFsNcA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>y5vq3iSpFyIPspR2EABPyU69zDAXkai+3s10Q9E0GrObibGSlP0qLoBrzjbIYigtOSjlkqXtlQ/RCRSzhTWRJ8XixYkAFI0lP9X7zDGhILIpJZW5Y1XqmPzBCLK3WGXnDXVjVLyVu1bbknBH6bV5R2P0GIJvIeeUQBGuH5HP8Qk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQcCiCxNmoXqdHZuk9uA0LFjANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigAUgBGAC0AVwBPAFIASwBTAFQAQQBUAEkATwBOAFwAUgBvAG0AYQBuMB4XDTE2MDgzMTE2NTkyNVoXDTE3MDgzMTIyNTkyNVowMzExMC8GA1UEAx4oAFIARgAtAFcATwBSAEsAUwBUAEEAVABJAE8ATgBcAFIAbwBtAGEAbjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAy5vq3iSpFyIPspR2EABPyU69zDAXkai+3s10Q9E0GrObibGSlP0qLoBrzjbIYigtOSjlkqXtlQ/RCRSzhTWRJ8XixYkAFI0lP9X7zDGhILIpJZW5Y1XqmPzBCLK3WGXnDXVjVLyVu1bbknBH6bV5R2P0GIJvIeeUQBGuH5HP8QkCAwEAATANBgkqhkiG9w0BAQsFAAOBgQDHer6RS9YOsBGzhj5zCBgRLr2taOLC/CZVjdavs23WoLr8d4kRRblrMa66Yq3p1sRn55SEfPDujJRmvv837MLLUHwJO71pm3203uf5Qz+bVI5t3VAlwuTk3GJDkAtGXyeN4wUa3HDcrP/aXl3PZPyUIcIMZMFXUQSOPbRx+FhO6A==</X509Certificate></X509Data></KeyInfo><Object><as:Timestamp>MIILUAYJKoZIhvcNAQcCoIILQTCCCz0CAQExCzAJBgUrDgMCGgUAMIGRBgkqhkiG
-9w0BBwGggYMEgYBUSTDWeEcsk1jrjldljvsWcO6m7QOAXHR5t4Iii7DixKUEEqAj
-x/HcDvunIiIQiMJELWQkQPt8Q5VGPgTRCJ9I/QqnF9nlawRFfdCh+DUCCMbIqib0
-ZPlbRFhUSNj1dRAN/aDHuBmuD2bUuhnjxMqaqJcUbbjIvQSpRP4QIWw1wKCCCJkw
+<publisherIdentity name="CN=RF-WORKSTATION\Roman" issuerKeyHash="62e76b71dbe36dbd43b2d6d66c347c284949c208" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>l1DqjjloOdNsnEN/uE0sYthN3MZQlLtobeFJ5mwxQd0=</DigestValue></Reference></SignedInfo><SignatureValue>OSPE7nFy5xQ79+BhFfnV+tTRgZxBUWzGVuO349Lm6xFGFzvBo9FYJRgtVNJT/mzLfcDxBLGrHzUu3WSK85DFZFJGHRMOCubqHRtbMAelYhI+Ckm4jrH9pJaKv5FJK3bWESZZCS+/YngT3KsLK0e2CIlDbP09CgwABqffQm+HN+4=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>y5vq3iSpFyIPspR2EABPyU69zDAXkai+3s10Q9E0GrObibGSlP0qLoBrzjbIYigtOSjlkqXtlQ/RCRSzhTWRJ8XixYkAFI0lP9X7zDGhILIpJZW5Y1XqmPzBCLK3WGXnDXVjVLyVu1bbknBH6bV5R2P0GIJvIeeUQBGuH5HP8Qk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="dd41316ce649e16d68bb9450c6dc4dd8622c4db87f439c6cd33968398eea5097" Description="" Url=""><as:assemblyIdentity name="Facebook Messenger.exe" version="1.0.0.5" publicKeyToken="70becee5be74ea9c" language="en" processorArchitecture="amd64" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=RF-WORKSTATION\Roman</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Bgu8JA4bOIEZcpcegsUZM9X/LErdmzfsYu9Hc7kPlPM=</DigestValue></Reference></SignedInfo><SignatureValue>bpqt3gkDcIL7xafYH0ENAdK1N43d/FsI1jX3TrMYOoycElvIYSFhrSOQUbV1KHb4s+6EsHXDVEgpyf4rO/iekDYouezYUhE/BHDh2aLlYO0vJfDXHJy9Y18XaC08kWvqeIdE5WSMtcVM2CpRAloT5lp7rtHuV4i1qy1S1hC0GIM=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>y5vq3iSpFyIPspR2EABPyU69zDAXkai+3s10Q9E0GrObibGSlP0qLoBrzjbIYigtOSjlkqXtlQ/RCRSzhTWRJ8XixYkAFI0lP9X7zDGhILIpJZW5Y1XqmPzBCLK3WGXnDXVjVLyVu1bbknBH6bV5R2P0GIJvIeeUQBGuH5HP8Qk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQcCiCxNmoXqdHZuk9uA0LFjANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigAUgBGAC0AVwBPAFIASwBTAFQAQQBUAEkATwBOAFwAUgBvAG0AYQBuMB4XDTE2MDgzMTE2NTkyNVoXDTE3MDgzMTIyNTkyNVowMzExMC8GA1UEAx4oAFIARgAtAFcATwBSAEsAUwBUAEEAVABJAE8ATgBcAFIAbwBtAGEAbjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAy5vq3iSpFyIPspR2EABPyU69zDAXkai+3s10Q9E0GrObibGSlP0qLoBrzjbIYigtOSjlkqXtlQ/RCRSzhTWRJ8XixYkAFI0lP9X7zDGhILIpJZW5Y1XqmPzBCLK3WGXnDXVjVLyVu1bbknBH6bV5R2P0GIJvIeeUQBGuH5HP8QkCAwEAATANBgkqhkiG9w0BAQsFAAOBgQDHer6RS9YOsBGzhj5zCBgRLr2taOLC/CZVjdavs23WoLr8d4kRRblrMa66Yq3p1sRn55SEfPDujJRmvv837MLLUHwJO71pm3203uf5Qz+bVI5t3VAlwuTk3GJDkAtGXyeN4wUa3HDcrP/aXl3PZPyUIcIMZMFXUQSOPbRx+FhO6A==</X509Certificate></X509Data></KeyInfo><Object><as:Timestamp>MIILUAYJKoZIhvcNAQcCoIILQTCCCz0CAQExCzAJBgUrDgMCGgUAMIGRBgkqhkiG
+9w0BBwGggYMEgYBumq3eCQNwgvvFp9gfQQ0B0rU3jd38WwjWNfdOsxg6jJwSW8hh
+IWGtI5BRtXUodviz7oSwdcNUSCnJ/is7+J6QNii57NhSET8EcOHZouVg7S8l8Ncc
+nL1jXxdoLTyRa+p4h0TlZIy1xUzYKlECWhPmWnuu0e5XiLWrLVLWELQYg6CCCJkw
 ggPuMIIDV6ADAgECAhB+k+v7fMZOWepLmnfUBvw7MA0GCSqGSIb3DQEBBQUAMIGL
 MQswCQYDVQQGEwJaQTEVMBMGA1UECBMMV2VzdGVybiBDYXBlMRQwEgYDVQQHEwtE
 dXJiYW52aWxsZTEPMA0GA1UEChMGVGhhd3RlMR0wGwYDVQQLExRUaGF3dGUgQ2Vy
@@ -328,12 +352,12 @@ DagpjyzhsvRaqQGvFZwsL0kb2yK7w/54lFHDhrGCiF3wPbRRoXkzKy57udwgCRNx
 AgEBMHIwXjELMAkGA1UEBhMCVVMxHTAbBgNVBAoTFFN5bWFudGVjIENvcnBvcmF0
 aW9uMTAwLgYDVQQDEydTeW1hbnRlYyBUaW1lIFN0YW1waW5nIFNlcnZpY2VzIENB
 IC0gRzICEA7P9DjI/r81bgTYapgbGlAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJ
-AzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTE2MDkwNzA5MzgzMFowIwYJ
-KoZIhvcNAQkEMRYEFKHPorAyQdNGQLxp6ontZm619zKIMA0GCSqGSIb3DQEBAQUA
-BIIBAHZhOi1eCNrYjhos9LoPePbZPs3ehykFCfGRgTRcYYdZIOtajbPzINgKv5HA
-/0KFPHxYpoDglGXmCh3NMo/6xcNYqSLiotKpljZEDiE2Svq2eTSN6lcLM8gWQFSW
-23b9MDZz1Tcm97VcYynKzKSvvllRBR0vgv5H1VPLVR3duvMbN6HLpkmTyJW/AHkY
-PP28Le6fBqR2ID5mkUg3aYQnGhx4tYEVljFrfN+mCwAJuRGwruBOBdA1tm2Dym3c
-SWnAixTHID+RREHPpITheWrJgK2YqeyTNWzwbTYann9OmRYYU3A8ZlARYOvx/JeM
-f0Jztr/dNkSKWrHXSCJ2Tn+6IAo=
+AzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTE2MDkwNzA5NTEyOVowIwYJ
+KoZIhvcNAQkEMRYEFCbbK9P5A1Xz9ty1RDdojgGKDB5aMA0GCSqGSIb3DQEBAQUA
+BIIBAJ8yzVNM9rhW9LeHeeGKRZwOdrmW7Plw+D34jsmgUV1zd/wQDAG86Rj0qpsk
+Ry3+qHfuB53tT4pOeqenkhm5tIotPDvY+xAVq8Szh4f5KWNHLqKoKp/yPirCIjgK
+Iia5LZ78mGcUDKjxZw4UBcCI1e0RRj5wuUibqoYk4WWmV34U/VvlDFbqN38Q0AID
+dYRYkay9C9xHkiehdolTb7wxHneKvD3ihapNzEpefz+1tE03bZa6AW3J9FyLXCWn
+sKQ9Qcqj4VQYcTodM3ogippCewNVcIvqFlXFnhGWzTqraWst9lTVdhIp+MLADaZ3
+mbHHGyTokHRy1EFh8V//IFfew2g=
 </as:Timestamp></Object></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
