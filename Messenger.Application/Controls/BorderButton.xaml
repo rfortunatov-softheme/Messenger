@@ -1,0 +1,39 @@
+﻿<Button x:Class="Messenger.Controls.BorderButton"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:implementation="clr-namespace:Messenger.Implementation"
+        xmlns:controls="clr-namespace:Messenger.Controls"
+        Background="Transparent"
+        Margin="0,0,15,5"
+        BorderBrush="Transparent"
+        OverridesDefaultStyle="True"
+        SnapsToDevicePixels="True">
+    <Button.Template>
+        <ControlTemplate TargetType="{x:Type Button}">
+            <ContentPresenter>
+                <ContentPresenter.Content>
+                    <Image Source="{TemplateBinding Content}" 
+                           Width="15"
+                           Height="15"
+                           Stretch="Fill"/>
+                </ContentPresenter.Content>
+            </ContentPresenter>
+        </ControlTemplate>
+    </Button.Template>
+    <i:Interaction.Triggers>
+        
+        <i:EventTrigger EventName="MouseEnter">
+            <implementation:SetPropertyOnEvent PropertyName="Content" 
+                                               TargetObject="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type controls:BorderButton}}}" 
+                                               PropertyValue="{Binding ContentHower, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type controls:BorderButton}}}"/>
+        </i:EventTrigger>
+        
+        <i:EventTrigger EventName="MouseLeave">
+            <implementation:SetPropertyOnEvent PropertyName="Content" 
+                                               TargetObject="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type controls:BorderButton}}}" 
+                                               PropertyValue="{Binding ContentNormal, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type controls:BorderButton}}}"/>
+        </i:EventTrigger>
+        
+    </i:Interaction.Triggers>
+</Button>

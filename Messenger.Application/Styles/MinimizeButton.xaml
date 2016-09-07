@@ -1,0 +1,43 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Messenger.Styles">
+    <DrawingImage x:Key="Minimize">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <DrawingGroup>
+                    <DrawingGroup.ClipGeometry>
+                        <RectangleGeometry Rect="0,0,410.267,410.267" />
+                    </DrawingGroup.ClipGeometry>
+                    <DrawingGroup>
+                        <DrawingGroup>
+                            <GeometryDrawing Brush="Black">
+                                <GeometryDrawing.Geometry>
+                                    <PathGeometry FillRule="Nonzero"
+                                                          Figures="M17,154.133L141.1,154.133C150.45,154.133,156.967,145.35,156.967,135.716L156.967,17C156.967,7.65 149.317,0 139.967,0 130.617,0 122.967,7.65 122.967,17L122.967,97.183 36.267,9.91600000000001C29.75,3.39900000000001 18.984,3.39900000000001 12.467,9.91600000000001 5.94999999999998,16.433 5.94999999999998,28.049 12.467,34.566L97.467,120.133 17,120.133C7.65,120.133 0,127.783 0,137.133 0,146.483 7.65,154.133 17,154.133z" />
+                                </GeometryDrawing.Geometry>
+                            </GeometryDrawing>
+                            <GeometryDrawing Brush="Black">
+                                <GeometryDrawing.Geometry>
+                                    <PathGeometry FillRule="Nonzero"
+                                                          Figures="M17,287.3L95.767,287.3 9.917,373.15C3.4,379.667 3.4,390.717 9.917,397.233 13.317,400.633 17.567,402.333 21.817,402.333 26.067,402.333 30.317,400.633 33.717,397.516L120.134,311.099 120.134,393.266C120.134,402.616 127.784,410.266 137.134,410.266 146.484,410.266 154.134,402.616 154.134,393.266L154.134,270.866C154.134,261.516,146.767,253.583,137.417,253.583L17,253.583C7.65,253.583 0,261.233 0,270.583 0,279.933 7.65,287.3 17,287.3z" />
+                                </GeometryDrawing.Geometry>
+                            </GeometryDrawing>
+                            <GeometryDrawing Brush="#FF000000">
+                                <GeometryDrawing.Geometry>
+                                    <PathGeometry FillRule="Nonzero"
+                                                          Figures="M410.267,278.8C410.267,269.45,402.617,261.8,393.267,261.8L271.717,261.8C262.367,261.8,253.3,268.317,253.3,277.667L253.3,392.984C253.3,402.334 260.95,409.984 270.3,409.984 279.65,409.984 287.3,402.334 287.3,392.984L287.3,315.634 372.867,400.351C376.267,403.751 380.8,405.451 385.334,405.451 389.867,405.451 394.117,403.751 397.517,400.351 404.034,393.834 404.317,383.351 397.517,376.834L315.917,295.801 393.267,295.801C402.617,295.8,410.267,288.15,410.267,278.8z" />
+                                </GeometryDrawing.Geometry>
+                            </GeometryDrawing>
+                            <GeometryDrawing Brush="#FF000000">
+                                <GeometryDrawing.Geometry>
+                                    <PathGeometry FillRule="Nonzero"
+                                                          Figures="M393.267,125.8L311.1,125.8 397.233,39.667C403.75,33.15 403.75,22.384 397.233,15.584 390.716,9.067 379.1,9.067 372.583,15.584L287.3,100.3 287.3,17C287.3,7.65 279.65,0 270.3,0 260.95,0 253.3,7.65 253.3,17L253.3,142.8C253.3,152.15,262.367,159.8,271.717,159.8L393.267,159.8C402.617,159.8 410.267,152.15 410.267,142.8 410.267,133.45 402.617,125.8 393.267,125.8z" />
+                                </GeometryDrawing.Geometry>
+                            </GeometryDrawing>
+                        </DrawingGroup>
+                    </DrawingGroup>
+                </DrawingGroup>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+</ResourceDictionary>

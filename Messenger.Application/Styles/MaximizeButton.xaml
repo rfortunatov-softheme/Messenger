@@ -1,0 +1,25 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Messenger.Styles">
+    <DrawingImage x:Key="Maximize">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <DrawingGroup>
+                    <DrawingGroup.ClipGeometry>
+                        <RectangleGeometry Rect="0,0,80,80" />
+                    </DrawingGroup.ClipGeometry>
+                    <DrawingGroup>
+                        <DrawingGroup>
+                            <GeometryDrawing Brush="Black">
+                                <GeometryDrawing.Geometry>
+                                    <PathGeometry FillRule="Nonzero"
+                                                          Figures="M70,0L29.9,0C24.4,0,20,4.4,20,9.9L20,50C20,55.5,24.5,60,30,60L70,60C75.5,60,80,55.5,80,50L80,10C80,4.5,75.5,0,70,0z M70,50L30,50 30,10 70,10 70,50z M10,40L0,40 0,70C0,75.5,4.5,80,10,80L40,80 40,70 10,70 10,40z" />
+                                </GeometryDrawing.Geometry>
+                            </GeometryDrawing>
+                        </DrawingGroup>
+                    </DrawingGroup>
+                </DrawingGroup>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+</ResourceDictionary>
