@@ -36,9 +36,9 @@
     <PublisherName>Roman Fortunatov</PublisherName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>10</ApplicationRevision>
+    <ApplicationRevision>11</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <UseApplicationTrust>true</UseApplicationTrust>
+    <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -108,7 +108,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Messenger.App</StartupObject>
+    <StartupObject>
+    </StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>false</SignManifests>
@@ -123,7 +124,8 @@
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>sign_certificate.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>
@@ -132,9 +134,8 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup />
-  <PropertyGroup>
-    <NoWin32Manifest>true</NoWin32Manifest>
-  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -158,6 +159,7 @@
     </ApplicationDefinition>
     <Compile Include="Implementation\RequestHandler.cs" />
     <Compile Include="Implementation\SetPropertyOnEvent.cs" />
+    <Compile Include="Settings.cs" />
     <Compile Include="Views\MessengerHost.xaml.cs">
       <DependentUpon>MessengerHost.xaml</DependentUpon>
     </Compile>
@@ -186,18 +188,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
     <Content Include="..\packages\CefSharp.Common.51.0.0\CefSharp\x64\CefSharp.BrowserSubprocess.Core.dll">
       <Link>CefSharp.BrowserSubprocess.Core.dll</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\packages\CefSharp.Common.51.0.0\CefSharp\x64\CefSharp.BrowserSubprocess.exe">
       <Link>CefSharp.BrowserSubprocess.exe</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -205,44 +200,31 @@
     </EmbeddedResource>
     <Content Include="..\packages\cef.redist.x64.3.2704.1432\CEF\cef.pak">
       <Link>cef.pak</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\packages\cef.redist.x64.3.2704.1432\CEF\cef_100_percent.pak">
       <Link>cef_100_percent.pak</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\packages\cef.redist.x64.3.2704.1432\CEF\cef_200_percent.pak">
       <Link>cef_200_percent.pak</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\packages\cef.redist.x64.3.2704.1432\CEF\cef_extensions.pak">
       <Link>cef_extensions.pak</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\packages\cef.redist.x64.3.2704.1432\CEF\devtools_resources.pak">
       <Link>devtools_resources.pak</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\packages\cef.redist.x64.3.2704.1432\CEF\icudtl.dat">
       <Link>icudtl.dat</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\packages\cef.redist.x64.3.2704.1432\CEF\x64\natives_blob.bin">
       <Link>natives_blob.bin</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\packages\cef.redist.x64.3.2704.1432\CEF\x64\snapshot_blob.bin">
       <Link>snapshot_blob.bin</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Properties\packages.config" />
     <None Include="Properties\app.manifest" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
     <AppDesigner Include="Properties\" />
-    <None Include="sign_certificate.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\App.config" />
@@ -268,27 +250,21 @@
   <ItemGroup>
     <Content Include="..\packages\cef.redist.x64.3.2704.1432\CEF\x64\d3dcompiler_43.dll">
       <Link>d3dcompiler_43.dll</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\packages\cef.redist.x64.3.2704.1432\CEF\x64\d3dcompiler_47.dll">
       <Link>d3dcompiler_47.dll</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\packages\cef.redist.x64.3.2704.1432\CEF\x64\libcef.dll">
       <Link>libcef.dll</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\packages\cef.redist.x64.3.2704.1432\CEF\x64\libEGL.dll">
       <Link>libEGL.dll</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\packages\cef.redist.x64.3.2704.1432\CEF\x64\libGLESv2.dll">
       <Link>libGLESv2.dll</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\packages\cef.redist.x64.3.2704.1432\CEF\x64\widevinecdmadapter.dll">
       <Link>widevinecdmadapter.dll</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
