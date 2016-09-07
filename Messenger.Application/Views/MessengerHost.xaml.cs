@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
@@ -9,15 +8,16 @@ using System.Windows.Input;
 using System.Windows.Interop;
 using System.Windows.Media;
 using CefSharp;
+using Messenger.Implementation;
 
-namespace Messenger
+namespace Messenger.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MessengerHost.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MessengerHost : Window
     {
-        public MainWindow()
+        public MessengerHost()
         {
             var settings = new CefSettings();
             settings.CefCommandLineArgs.Add("disable-gpu", "1");
@@ -37,7 +37,7 @@ namespace Messenger
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
         private static extern IntPtr SendMessage(IntPtr hWnd, uint Msg, IntPtr wParam, IntPtr lParam);
 
-        [DllImportAttribute("user32.dll")]
+        [DllImport("user32.dll")]
         public static extern bool ReleaseCapture();
 
         //Attach this to the MouseDown event of your drag control to move the window in place of the title bar
@@ -74,8 +74,8 @@ namespace Messenger
         {
             Task.Factory.StartNew(() =>
             {
-                Notification notification = null;
-                Dispatcher.Invoke(() => (notification = new Notification()).Show());
+                Views.Notification notification = null;
+                Dispatcher.Invoke(() => (notification = new Views.Notification()).Show());
                 Thread.Sleep(TimeSpan.FromSeconds(5));
                 Dispatcher.Invoke(() => notification.CloseWindow(null, null));
             });

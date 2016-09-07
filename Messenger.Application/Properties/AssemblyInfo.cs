@@ -7,11 +7,11 @@ using System.Windows;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Messenger")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Facebook Messenger")]
+[assembly: AssemblyDescription("WPF wrapper upon facebook messenger web site to use it as stabdalone application")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Messenger")]
+[assembly: AssemblyCompany("Roman Fortunatov")]
+[assembly: AssemblyProduct("Facebook Messenger")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -53,3 +53,6 @@ using System.Windows;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: NeutralResourcesLanguage("en")]
+[assembly: Guid("26f9d392-278b-4321-baab-4c62f0f32aef")]
+

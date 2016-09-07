@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messenger", "Messenger\Messenger.csproj", "{07E80E1A-57D9-4134-A6E0-A056BB36883D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messenger.Application", "Messenger.Application\Messenger.Application.csproj", "{07E80E1A-57D9-4134-A6E0-A056BB36883D}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Messanger.Installer", "Messenger.Installer\Messenger.Installer.vdproj", "{3052441F-C253-450A-9F74-E5FA5125CC14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,11 @@ Global
 		{07E80E1A-57D9-4134-A6E0-A056BB36883D}.Release|x64.Build.0 = Release|x64
 		{07E80E1A-57D9-4134-A6E0-A056BB36883D}.Release|x86.ActiveCfg = Release|x86
 		{07E80E1A-57D9-4134-A6E0-A056BB36883D}.Release|x86.Build.0 = Release|x86
+		{3052441F-C253-450A-9F74-E5FA5125CC14}.Debug|x64.ActiveCfg = Debug
+		{3052441F-C253-450A-9F74-E5FA5125CC14}.Debug|x64.Build.0 = Debug
+		{3052441F-C253-450A-9F74-E5FA5125CC14}.Debug|x86.ActiveCfg = Debug
+		{3052441F-C253-450A-9F74-E5FA5125CC14}.Release|x64.ActiveCfg = Release
+		{3052441F-C253-450A-9F74-E5FA5125CC14}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

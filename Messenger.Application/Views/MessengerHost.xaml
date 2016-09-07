@@ -1,9 +1,9 @@
-﻿<Window x:Class="Messenger.MainWindow"
+﻿<Window x:Class="Messenger.Views.MessengerHost"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:wpfBrowser="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
-        xmlns:messenger="clr-namespace:Messenger"
+        xmlns:implementation="clr-namespace:Messenger.Implementation"
         Height="640"
         Width="1280"
         WindowStyle="None"
@@ -28,7 +28,7 @@
                 </Setter>
             </Style>
 
-            <DrawingImage x:Key="close">
+            <DrawingImage x:Key="Close">
                 <DrawingImage.Drawing>
                     <DrawingGroup>
                         <DrawingGroup>
@@ -52,7 +52,7 @@
                 </DrawingImage.Drawing>
             </DrawingImage>
 
-            <DrawingImage x:Key="minimize">
+            <DrawingImage x:Key="Minimize">
                 <DrawingImage.Drawing>
                     <DrawingGroup>
                         <DrawingGroup>
@@ -92,7 +92,7 @@
                 </DrawingImage.Drawing>
             </DrawingImage>
 
-            <DrawingImage x:Key="maximize">
+            <DrawingImage x:Key="Maximize">
                 <DrawingImage.Drawing>
                     <DrawingGroup>
                         <DrawingGroup>
@@ -114,7 +114,7 @@
                 </DrawingImage.Drawing>
             </DrawingImage>
 
-            <DrawingImage x:Key="closeHower">
+            <DrawingImage x:Key="CloseHower">
                 <DrawingImage.Drawing>
                     <DrawingGroup>
                         <DrawingGroup>
@@ -138,7 +138,7 @@
                 </DrawingImage.Drawing>
             </DrawingImage>
 
-            <DrawingImage x:Key="minimizeHower">
+            <DrawingImage x:Key="MinimizeHower">
                 <DrawingImage.Drawing>
                     <DrawingGroup>
                         <DrawingGroup>
@@ -178,7 +178,7 @@
                 </DrawingImage.Drawing>
             </DrawingImage>
 
-            <DrawingImage x:Key="maximizeHower">
+            <DrawingImage x:Key="MaximizeHower">
                 <DrawingImage.Drawing>
                     <DrawingGroup>
                         <DrawingGroup>
@@ -222,22 +222,22 @@
                         </DataTemplate>
                     </Button.ContentTemplate>
                     <Button.Content>
-                        <Image Source="{StaticResource close}" Height="20" Width="20" Stretch="Fill" />
+                        <Image Source="{StaticResource Close}" Height="20" Width="20" Stretch="Fill" />
                     </Button.Content>
                     <i:Interaction.Triggers>
                         <i:EventTrigger EventName="MouseEnter">
-                            <messenger:SetPropertyOnEvent PropertyName="Content" TargetObject="{Binding}">
-                                <messenger:SetPropertyOnEvent.PropertyValue>
-                                    <Image Source="{StaticResource closeHower}" Height="20" Width="20" Stretch="Fill" />
-                                </messenger:SetPropertyOnEvent.PropertyValue>
-                            </messenger:SetPropertyOnEvent>
+                            <implementation:SetPropertyOnEvent PropertyName="Content" TargetObject="{Binding}">
+                                <implementation:SetPropertyOnEvent.PropertyValue>
+                                    <Image Source="{StaticResource CloseHower}" Height="20" Width="20" Stretch="Fill" />
+                                </implementation:SetPropertyOnEvent.PropertyValue>
+                            </implementation:SetPropertyOnEvent>
                         </i:EventTrigger>
                         <i:EventTrigger EventName="MouseLeave">
-                            <messenger:SetPropertyOnEvent PropertyName="Content" TargetObject="{Binding}">
-                                <messenger:SetPropertyOnEvent.PropertyValue>
-                                    <Image Source="{StaticResource close}" Height="20" Width="20" Stretch="Fill" />
-                                </messenger:SetPropertyOnEvent.PropertyValue>
-                            </messenger:SetPropertyOnEvent>
+                            <implementation:SetPropertyOnEvent PropertyName="Content" TargetObject="{Binding}">
+                                <implementation:SetPropertyOnEvent.PropertyValue>
+                                    <Image Source="{StaticResource Close}" Height="20" Width="20" Stretch="Fill" />
+                                </implementation:SetPropertyOnEvent.PropertyValue>
+                            </implementation:SetPropertyOnEvent>
                         </i:EventTrigger>
                     </i:Interaction.Triggers>
                 </Button>
@@ -249,23 +249,23 @@
                         </DataTemplate>
                     </Button.ContentTemplate>
                     <Button.Content>
-                        <Image Source="{StaticResource minimize}" Height="20" Width="20" Stretch="Fill" />
+                        <Image Source="{StaticResource Minimize}" Height="20" Width="20" Stretch="Fill" />
                     </Button.Content>
                     <i:Interaction.Triggers>
                         <i:EventTrigger EventName="MouseEnter">
-                            <messenger:SetPropertyOnEvent PropertyName="Content" TargetObject="{Binding}">
-                                <messenger:SetPropertyOnEvent.PropertyValue>
-                                    <Image Source="{StaticResource minimizeHower}" Height="20" Width="20"
+                            <implementation:SetPropertyOnEvent PropertyName="Content" TargetObject="{Binding}">
+                                <implementation:SetPropertyOnEvent.PropertyValue>
+                                    <Image Source="{StaticResource MinimizeHower}" Height="20" Width="20"
                                            Stretch="Fill" />
-                                </messenger:SetPropertyOnEvent.PropertyValue>
-                            </messenger:SetPropertyOnEvent>
+                                </implementation:SetPropertyOnEvent.PropertyValue>
+                            </implementation:SetPropertyOnEvent>
                         </i:EventTrigger>
                         <i:EventTrigger EventName="MouseLeave">
-                            <messenger:SetPropertyOnEvent PropertyName="Content" TargetObject="{Binding}">
-                                <messenger:SetPropertyOnEvent.PropertyValue>
-                                    <Image Source="{StaticResource minimize}" Height="20" Width="20" Stretch="Fill" />
-                                </messenger:SetPropertyOnEvent.PropertyValue>
-                            </messenger:SetPropertyOnEvent>
+                            <implementation:SetPropertyOnEvent PropertyName="Content" TargetObject="{Binding}">
+                                <implementation:SetPropertyOnEvent.PropertyValue>
+                                    <Image Source="{StaticResource Minimize}" Height="20" Width="20" Stretch="Fill" />
+                                </implementation:SetPropertyOnEvent.PropertyValue>
+                            </implementation:SetPropertyOnEvent>
                         </i:EventTrigger>
                     </i:Interaction.Triggers>
                 </Button>
@@ -277,23 +277,23 @@
                         </DataTemplate>
                     </Button.ContentTemplate>
                     <Button.Content>
-                        <Image Source="{StaticResource maximize}" Height="20" Width="20" Stretch="Fill" />
+                        <Image Source="{StaticResource Maximize}" Height="20" Width="20" Stretch="Fill" />
                     </Button.Content>
                     <i:Interaction.Triggers>
                         <i:EventTrigger EventName="MouseEnter">
-                            <messenger:SetPropertyOnEvent PropertyName="Content" TargetObject="{Binding}">
-                                <messenger:SetPropertyOnEvent.PropertyValue>
-                                    <Image Source="{StaticResource maximizeHower}" Height="20" Width="20"
+                            <implementation:SetPropertyOnEvent PropertyName="Content" TargetObject="{Binding}">
+                                <implementation:SetPropertyOnEvent.PropertyValue>
+                                    <Image Source="{StaticResource MaximizeHower}" Height="20" Width="20"
                                            Stretch="Fill" />
-                                </messenger:SetPropertyOnEvent.PropertyValue>
-                            </messenger:SetPropertyOnEvent>
+                                </implementation:SetPropertyOnEvent.PropertyValue>
+                            </implementation:SetPropertyOnEvent>
                         </i:EventTrigger>
                         <i:EventTrigger EventName="MouseLeave">
-                            <messenger:SetPropertyOnEvent PropertyName="Content" TargetObject="{Binding}">
-                                <messenger:SetPropertyOnEvent.PropertyValue>
-                                    <Image Source="{StaticResource maximize}" Height="20" Width="20" Stretch="Fill" />
-                                </messenger:SetPropertyOnEvent.PropertyValue>
-                            </messenger:SetPropertyOnEvent>
+                            <implementation:SetPropertyOnEvent PropertyName="Content" TargetObject="{Binding}">
+                                <implementation:SetPropertyOnEvent.PropertyValue>
+                                    <Image Source="{StaticResource Maximize}" Height="20" Width="20" Stretch="Fill" />
+                                </implementation:SetPropertyOnEvent.PropertyValue>
+                            </implementation:SetPropertyOnEvent>
                         </i:EventTrigger>
                     </i:Interaction.Triggers>
                 </Button>
